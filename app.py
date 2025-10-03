@@ -8,6 +8,17 @@ app = Flask(__name__)
 def welcome():  # view function or endpoint
     return 'Welcome to my Flask App!'
 
+# Type Conversion:
+
+# Flask supports several type converters:
+
+#     string (default): Accepts any text without a slash.
+#     int: Accepts positive integers.
+#     float: Accepts floating-point numbers.
+#     path: Accepts any text including slashes.
+#     uuid: Accepts UUID strings.
+
+
 # String Route
 @app.route('/greet/<name>') # Dynamic URL
 def greet(name):
